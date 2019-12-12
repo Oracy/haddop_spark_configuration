@@ -23,5 +23,6 @@ Second Step:
 - Install and configure Flume.
 
 Install and configure Cloudera VM;<br>
-Install and configure Hortonworks VM;<br>
+Install and configure Hortonworks VM;
+
 Install and configure Hadoop with Docker.
