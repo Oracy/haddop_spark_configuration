@@ -14,6 +14,7 @@ Second Step:
 - [Install Hadoop](./Second_Step/README.md);
 - [Configure HDFS and MapReduce](./Second_Step/README.md);
 - [Execute MapReduce Job on HDFS](./Second_Step/README.md);
+- [Configure Yarn](./Second_Step/README.md);
 - [Install and configure Zookeeper](./Second_Step/README.md);
 - [Install and configure Hbase](./Second_Step/README.md);
 - [Install and configure Hive](./Second_Step/README.md);
