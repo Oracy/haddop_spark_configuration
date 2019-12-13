@@ -98,10 +98,67 @@
     HDFS [Commands](./Second_Step/commands.md) and tests
 
 3. **Execute MapReduce Job on HDFS**
-4. **Install and configure Zookeeper**
-5. **Install and configure Hbase**
-6. **Install and configure Hive**
-7. **Install and configure Pig**
-8. **Install and configure Sqoop**
-9. **Install and configure Spark**
-10. **Install and configure Flume**
+
+    ```bash
+    cd /opt/hadoop/share/hadoop/mapreduce
+    ls
+    cd -
+    hadoop jar /opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep /user/hadoop output 'dfs[a-z.]+'
+    # ALWAYS DO IT before shutdown (good practices)
+    stop-dfs.sh
+    ```
+
+    **Expected result**
+
+    ```bash
+    Stopping namenodes on [localhost]
+    Stopping datanodes
+    Stopping secondary namenodes [master-hadoop]
+    ```
+
+4. **Configure Yarn**
+
+    Replace below files with files in `/opt/hadoop/etc/hadoop/`
+    [mapred-site.xml](./Second_Step/mapred-site.xml)
+    [yarn-site.xml](./Second_Step/yarn-site.xml)
+
+    ```bash
+    start-dfs.sh
+    start-yarn.sh
+    jps
+    ```
+
+    **Expected result**
+
+    ```bash
+    # DFS
+    Starting namenodes on [localhost]
+    Starting datanodes
+    Starting secondary namenodes [master-hadoop]
+    # Yarn
+    Starting resourcemanager
+    Starting nodemanagers
+    # JPS
+    14450 NameNode
+    14786 SecondaryNameNode
+    15141 NodeManager
+    15030 ResourceManager
+    15478 Jps
+    14573 DataNode
+    ```
+
+    You can access Yarn information on browser `http://<ip_address>:8088`
+
+    ```bash
+    hdfs dfs -mkdir input
+    hdfs dfs -put /opt/hadoop/etc/hadoop/*.xml input
+    hadoop jar /opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output_yarn 'dfs[a-z.]+'
+    ```
+
+5. **Install and configure Zookeeper**
+6. **Install and configure Hbase**
+7. **Install and configure Hive**
+8. **Install and configure Pig**
+9. **Install and configure Sqoop**
+10. **Install and configure Spark**
+11. **Install and configure Flume**
