@@ -61,7 +61,8 @@
     openjdk version "1.8.0_232"
     OpenJDK Runtime Environment (build 1.8.0_232-b09)
     OpenJDK 64-Bit Server VM (build 25.232-b09, mixed mode)
-    # We can see that OpenJDK is already installed on our server, but since Oracle have been bought java, some applications runs better when Oracle JDK is installed instead of OpenJDK.
+    # We can see that OpenJDK is already installed on our server, but since Oracle
+    # have been bought java, some applications runs better when Oracle JDK is installed instead of OpenJDK.
     # OpenJDK version is supported by community, instead of Oracle.
     ```
 
