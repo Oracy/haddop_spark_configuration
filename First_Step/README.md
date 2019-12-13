@@ -1,7 +1,9 @@
 # First Step Hadoop
 
 1. Install [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
+
 2. Download [CentOS 7](http://isoredirect.centos.org/centos/7/isos/x86_64/)
+
 3. Install utilities ([java](https://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html), ssh, tools)
 
     After download CentOS, you can select this iso on VirtualBox and install that on our new machine. <br>

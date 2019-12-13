@@ -4,10 +4,10 @@ Softwares that will be installed:
 
 First Step:
 
-- [Create Virtual Machine](./First_Steps/README.md);
-- [Install LinuxOS](./First_Steps/README.md);
-- [Install utilities (java, ssh, tools)](./First_Steps/README.md);
-- [Install MySQL](./First_Steps/README.md).
+- [Create Virtual Machine](./First_Step/README.md);
+- [Install LinuxOS](./First_Step/README.md);
+- [Install utilities (java, ssh, tools)](./First_Step/README.md);
+- [Install MySQL](./First_Step/README.md).
 
 Second Step:
 
