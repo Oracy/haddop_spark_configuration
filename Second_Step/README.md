@@ -1,6 +1,6 @@
 # Second Step Hadoop
 
-1. Install Hadoop
+1. **Install Hadoop**
 
     Create new user for hadoop
 
@@ -42,9 +42,11 @@
     ```
 
     **Configuring Hadoop in Pseudo-Distributed mode**
-    Replace below files with files in this folder
+    Replace below files with files in `/opt/hadoop/etc/hadoop/`
     [core-site.xml](./Second_Step/core-site.xml)
     [hdfs-site.xml](./Second_Step/hdfs-site.xml)
+
+    Create localhost trust connection
 
     ```bash
     ssh-keygen -t rsa
@@ -52,12 +54,54 @@
     chmod 600 ~/.ssh/authorized_keys
     ```
 
-2. Configure HDFS and MapReduce
-3. Execute MapReduce Job on HDFS
-4. Install and configure Zookeeper
-5. Install and configure Hbase
-6. Install and configure Hive
-7. Install and configure Pig
-8. Install and configure Sqoop
-9. Install and configure Spark
-10. Install and configure Flume
+2. **Configure HDFS and MapReduce**
+
+    ```bash
+    hdfs namenode -format
+    ```
+
+    **Expected result**
+    `INFO common.Storage: Storage directory /tmp/hadoop-hadoop/dfs/name has been successfully formatted.`
+
+    Start Distributed Filesystem
+
+    ```bash
+    start-dfs.sh
+    ```
+
+    **Expected result**
+
+    ```bash
+    Starting namenodes on [localhost]
+    Starting datanodes
+    Starting secondary namenodes [master-hadoop]
+    master-hadoop: Warning: Permanently added 'master-hadoop,fe80::677a:d821:c063:e1ad%enp0s3' (ECDSA) to the list of known hosts.
+    ```
+
+    Check services related to Hadoop is running
+
+    ```bash
+    jps
+    ```
+
+    **Expected result**
+
+    ```bash
+    23044 Jps
+    20871 NameNode
+    20987 DataNode
+    21227 SecondaryNameNode
+    ```
+
+    You can access Namenode information on browser `http://<ip_address>:8970`
+
+    HDFS [Commands](./Second_Step/commands.md) and tests
+
+3. **Execute MapReduce Job on HDFS**
+4. **Install and configure Zookeeper**
+5. **Install and configure Hbase**
+6. **Install and configure Hive**
+7. **Install and configure Pig**
+8. **Install and configure Sqoop**
+9. **Install and configure Spark**
+10. **Install and configure Flume**
