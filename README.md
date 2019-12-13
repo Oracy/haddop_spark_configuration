@@ -11,16 +11,16 @@ First Step:
 
 Second Step:
 
-- Install Hadoop;
-- Configure HDFS and MapReduce;
-- Execute MapReduce Job on HDFS;
-- Install and configure Zookeeper;
-- Install and configure Hbase;
-- Install and configure Hive;
-- Install and configure Pig;
-- Install and configure Sqoop;
-- Install and configure Spark;
-- Install and configure Flume.
+- [Install Hadoop](./Second_Step/README.md);
+- [Configure HDFS and MapReduce](./Second_Step/README.md);
+- [Execute MapReduce Job on HDFS](./Second_Step/README.md);
+- [Install and configure Zookeeper](./Second_Step/README.md);
+- [Install and configure Hbase](./Second_Step/README.md);
+- [Install and configure Hive](./Second_Step/README.md);
+- [Install and configure Pig](./Second_Step/README.md);
+- [Install and configure Sqoop](./Second_Step/README.md);
+- [Install and configure Spark](./Second_Step/README.md);
+- [Install and configure Flume](./Second_Step/README.md).
 
 Install and configure Cloudera VM;<br>
 Install and configure Hortonworks VM;<br>
