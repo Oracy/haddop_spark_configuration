@@ -1,0 +1,35 @@
+# Install and Configure Sqoop
+
+```bash
+cd ~/Downloads
+wget https://www-eu.apache.org/dist/sqoop/1.4.7/sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz
+tar -zxvf sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz
+sudo mkdir /usr/local/sqoop
+sudo mv sqoop-1.4.7.bin__hadoop-2.6.0 /usr/local/sqoop
+sudo ln -s /usr/local/sqoop/sqoop-1.4.7.bin__hadoop-2.6.0 /opt/sqoop
+mkdir /opt/sqoop/accumulo
+mkdir /opt/sqoop/hcatalog
+```
+
+Replace below files with files in `/opt/sqoop/conf`
+[sqoop-env.sh](../sqoop/sqoop-env.sh)
+
+```bash
+echo '# Sqoop' >> ~/.bashrc
+echo 'export SQOOP_HOME=/opt/sqoop' >> ~/.bashrc
+echo 'export PATH=$PATH:$SQOOP_HOME/bin' >> ~/.bashrc
+echo 'export HCAT_HOME=/opt/sqoop/hcatalog' >> ~/.bashrc
+echo 'export ACCUMULO_HOME=/opt/sqoop/accumulo' >> ~/.bashrc
+source ~/.bashrc
+sqoop version
+```
+
+**Expected result**
+
+```bash
+Error: Could not find or load main class org.apache.hadoop.hbase.util.GetJavaProperty
+2019-12-15 18:56:54,078 INFO sqoop.Sqoop: Running Sqoop version: 1.4.7
+Sqoop 1.4.7
+git commit id 2328971411f57f0cb683dfb79d19d4d19d185dd8
+Compiled by maugli on Thu Dec 21 15:59:58 STD 2017
+```
