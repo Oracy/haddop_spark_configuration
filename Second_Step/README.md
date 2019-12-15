@@ -14,7 +14,7 @@
 
     Gerenciador para atividades em cluster.
 
-6. [Install and configure Hbase](./Instructions/Install_Configure_Hbas.md)
+6. [Install and configure Hbase](./Instructions/Install_Configure_Hbase.md)
 
     Banco de dados Nao relacional.
 
