@@ -28,3 +28,13 @@ Slaves (Workers)
   - Execute Map Reduce.
 
 ---
+
+[Hadoop Ecosystem Table](http://hadoopecosystemtable.github.io/)
+
+---
+
+```bash
+start-dfs.sh
+start-yarn.sh
+zkServer.sh start
+```

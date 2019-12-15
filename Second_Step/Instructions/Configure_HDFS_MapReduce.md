@@ -39,4 +39,4 @@ jps
 
 You can access Namenode information on browser `http://<ip_address>:8970`
 
-HDFS [Commands](./Second_Step/commands.md) and tests
+HDFS [Commands](../commands.md) and tests

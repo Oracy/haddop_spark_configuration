@@ -1,8 +1,8 @@
 # Configure Yarn
 
 Replace below files with files in `/opt/hadoop/etc/hadoop/`
-[mapred-site.xml](./Second_Step/mapred-site.xml)
-[yarn-site.xml](./Second_Step/yarn-site.xml)
+[mapred-site.xml](../mapred-site.xml)
+[yarn-site.xml](../yarn-site.xml)
 
 ```bash
 start-dfs.sh
