@@ -5,6 +5,7 @@ hdfs namenode -format
 ```
 
 **Expected result**
+
 `INFO common.Storage: Storage directory /tmp/hadoop-hadoop/dfs/name has been successfully formatted.`
 
 Start Distributed Filesystem

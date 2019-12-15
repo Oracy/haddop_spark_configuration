@@ -13,7 +13,7 @@ cd conf
 cp zoo_sample.cfg zoo.cfg
 ```
 
-Replace below files with files in `/opt/zookeper/conf`
+Replace below files with files in `/opt/zookeper/conf`<br>
 [zoo.cfg](../zookeeper/zoo.cfg)
 
 ```bash

@@ -9,7 +9,7 @@ sudo mv apache-flume-1.9.0-bin /usr/local/flume
 sudo ln -s /usr/local/flume/apache-flume-1.9.0-bin /opt/flume
 ```
 
-Replace below files with files in `/opt/flume/conf`
+Replace below files with files in `/opt/flume/conf`<br>
 [flume-env.sh](../flume/flume-env.sh)
 
 ```bash

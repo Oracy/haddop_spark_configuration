@@ -12,8 +12,8 @@ mkdir hfiles
 cd conf
 ```
 
-Replace below files with files in `/opt/hbase/conf`
-[hbase-env.sh](../hbase/hbase-env.sh)
+Replace below files with files in `/opt/hbase/conf`<br>
+[hbase-env.sh](../hbase/hbase-env.sh)<br>
 [hbase-site.xml](../hbase/hbase-site.xml)
 
 ```bash

@@ -11,7 +11,7 @@ mkdir /opt/sqoop/accumulo
 mkdir /opt/sqoop/hcatalog
 ```
 
-Replace below files with files in `/opt/sqoop/conf`
+Replace below files with files in `/opt/sqoop/conf`<br>
 [sqoop-env.sh](../sqoop/sqoop-env.sh)
 
 ```bash

@@ -1,7 +1,7 @@
 # Configure Yarn
 
-Replace below files with files in `/opt/hadoop/etc/hadoop/`
-[mapred-site.xml](../mapred-site.xml)
+Replace below files with files in `/opt/hadoop/etc/hadoop/`<br>
+[mapred-site.xml](../mapred-site.xml)<br>
 [yarn-site.xml](../yarn-site.xml)
 
 ```bash

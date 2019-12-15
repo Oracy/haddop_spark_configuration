@@ -10,8 +10,8 @@ sudo ln -s /usr/local/hive/apache-hive-3.1.2-bin /opt/hive
 cd /opt/hive/conf
 ```
 
-Replace below files with files in `/opt/hive/conf`
-[hive-env.sh](../hive/hive-env.sh)
+Replace below files with files in `/opt/hive/conf`<br>
+[hive-env.sh](../hive/hive-env.sh)<br>
 [hive-default.xml](../hive/hive-default.xml)
 
 ```bash
