@@ -20,6 +20,8 @@ hdfs dfs -mkdir /user/hive/warehouse
 echo '# Hive' >> ~/.bashrc
 echo 'export HIVE_HOME=/opt/hive' >> ~/.bashrc
 echo 'export PATH=$PATH:$HIVE_HOME/bin' >> ~/.bashrc
+echo 'export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib/*:.' >> ~/.bashrc
+echo 'export CLASSPATH=$CLASSPATH:$HIVE_HOME/lib/*:.' >> ~/.bashrc
 source ~/.bashrc
 cp /opt/hadoop/share/hadoop/common/lib/guava-27.0-jre.jar /opt/hive/lib
 mv guava-19.0.jar guava-19.0.jar_bkp
