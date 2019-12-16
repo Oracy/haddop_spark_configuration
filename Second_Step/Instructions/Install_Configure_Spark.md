@@ -8,8 +8,8 @@ sudo mkdir /usr/local/spark
 sudo mv spark-2.4.4-bin-hadoop2.7 /usr/local/spark
 sudo ln -s /usr/local/spark/spark-2.4.4-bin-hadoop2.7 /opt/spark
 echo '# Spark' >> ~/.bashrc
-echo 'SPARK_HOME=/opt/spark' >> ~/.bashrc
-echo 'PATH=$PATH:$SPARK_HOME/bin' >> ~/.bashrc
+echo 'export SPARK_HOME=/opt/spark' >> ~/.bashrc
+echo 'export PATH=$PATH:$SPARK_HOME/bin' >> ~/.bashrc
 source ~/.bashrc
 # For Scala
 spark-shell

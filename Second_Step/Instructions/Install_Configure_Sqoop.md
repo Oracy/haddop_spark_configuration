@@ -33,3 +33,27 @@ Sqoop 1.4.7
 git commit id 2328971411f57f0cb683dfb79d19d4d19d185dd8
 Compiled by maugli on Thu Dec 21 15:59:58 STD 2017
 ```
+
+---
+
+## Configure MySQL in Sqoop
+
+```bash
+cd ~/Downloads
+wget https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-8.0.18.tar.gz
+tar -zxvf mysql-connector-java-8.0.18.tar.gz
+cd mysql-connector-java-8.0.18
+cp mysql-connector-java-8.0.18.jar /opt/sqoop/lib/
+```
+
+### Sqoop USe
+
+```bash
+cd ~/Downloads
+wget https://www-eu.apache.org/dist//commons/lang/binaries/commons-lang-2.6-bin.tar.gz
+tar -zxvf commons-lang-2.6-bin.tar.gz
+cd commons-lang-2.6-bin
+cp commons-lang-2.6.jar /opt/sqoop/lib/
+sqoop list-databases --connect jdbc:mysql://localhost:3306/ --username root -P
+sqoop import --connect jdbc:mysql://localhost:3306/testedb --username root --password change_Password1 --table empregados -m 1
+```

@@ -42,8 +42,8 @@ echo 'export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin' >> ~/.bashrc
 **Configuring Hadoop in Pseudo-Distributed mode**
 
 Replace below files with files in `/opt/hadoop/etc/hadoop/`<br>
-[core-site.xml](./Second_Step/core-site.xml)<br>
-[hdfs-site.xml](./Second_Step/hdfs-site.xml)
+[core-site.xml](../hadoop/core-site.xml)<br>
+[hdfs-site.xml](../hadoop/hdfs-site.xml)
 
 Create localhost trust connection
 

@@ -1,4 +1,4 @@
-# Configure Hadoop and Spark.
+# Configure Hadoop and Spark
 
 Softwares that will be installed:
 

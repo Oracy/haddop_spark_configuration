@@ -11,6 +11,9 @@ hdfs namenode -format
 Start Distributed Filesystem
 
 ```bash
+mkdir /opt/hadoop/dfs
+mkdir /opt/hadoop/dfs/data
+mkdir /opt/hadoop/dfs/namespace_logs
 start-dfs.sh
 ```
 
