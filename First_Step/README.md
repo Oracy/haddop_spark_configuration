@@ -4,7 +4,7 @@
 
 2. Download [CentOS 7](http://isoredirect.centos.org/centos/7/isos/x86_64/)
 
-3. Install utilities ([java](https://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html), ssh, tools)
+3. Install utilities ([java](https://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)(Java SE Development Kit 8u231), ssh, tools)
 
     After download CentOS, you can select this iso on VirtualBox and install that on our new machine. <br>
     Install Guest Additions on VirtualBox after CentOS installed.<br>
