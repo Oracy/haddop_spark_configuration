@@ -5,7 +5,9 @@
     Ecosystem
 
 2. [Configure HDFS and MapReduce](./Instructions/Configure_HDFS_MapReduce.md)
+
 3. [Execute MapReduce Job in HDFS](./Instructions/Execute_Job_HDFS.md)
+
 4. [Configure Yarn](./Instructions/Configure_Yarn.md)
 
     It is a resource management platform responsible for managing clustered computational resources as well as scheduling resources.
