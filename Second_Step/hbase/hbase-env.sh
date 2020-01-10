@@ -86,7 +86,7 @@ export HBASE_OPTS="$HBASE_OPTS -XX:+UseConcMarkSweepGC"
 # export HBASE_REST_OPTS="$HBASE_REST_OPTS $HBASE_JMX_BASE -Dcom.sun.management.jmxremote.port=10105"
 
 # File naming hosts on which HRegionServers will run.  $HBASE_HOME/conf/regionservers by default.
-# export HBASE_REGIONSERVERS=${HBASE_HOME}/conf/regionservers
+export HBASE_REGIONSERVERS=${HBASE_HOME}/conf/regionservers
 
 # Uncomment and adjust to keep all the Region Server pages mapped to be memory resident
 #HBASE_REGIONSERVER_MLOCK=true
@@ -97,6 +97,7 @@ export HBASE_OPTS="$HBASE_OPTS -XX:+UseConcMarkSweepGC"
 
 # Extra ssh options.  Empty by default.
 # export HBASE_SSH_OPTS="-o ConnectTimeout=1 -o SendEnv=HBASE_CONF_DIR"
+export HBASE_SSH_OPTS="-p 22 -l hadoop"
 
 # Where log files are stored.  $HBASE_HOME/logs by default.
 # export HBASE_LOG_DIR=${HBASE_HOME}/logs
@@ -123,7 +124,7 @@ export HBASE_OPTS="$HBASE_OPTS -XX:+UseConcMarkSweepGC"
 # export HBASE_SLAVE_SLEEP=0.1
 
 # Tell HBase whether it should manage it's own instance of ZooKeeper or not.
-# export HBASE_MANAGES_ZK=true
+export HBASE_MANAGES_ZK=true
 
 # The default log rolling policy is RFA, where the log file is rolled as per the size defined for the 
 # RFA appender. Please refer to the log4j.properties file to see more details on this appender.
